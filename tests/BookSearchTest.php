@@ -61,7 +61,7 @@ class BookSearchTest extends PHPUnit_Framework_TestCase {
 		$results = $search->find('The Definitive Guide to Symfony', true);
 
 		// Assert
-		$this->assertEmpty($results);
+		$this->assertFalse($results);
 
 	}
 

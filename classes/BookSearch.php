@@ -29,8 +29,11 @@ class BookSearch {
 		    	}
 			}
 		}
-
-		return $results;
+		
+		if(count($results) > 0)
+			return $results;
+		else 
+			return false;
 	}
 
 }
